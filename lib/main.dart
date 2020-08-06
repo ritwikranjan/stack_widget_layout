@@ -21,12 +21,12 @@ class MyApp extends StatelessWidget {
               ),
             ),
             Align(
-              alignment: Alignment.topLeft,
+              alignment: Alignment.topCenter,
               child: SafeArea(
                 child: Padding(
                   padding: const EdgeInsets.only(top: 10.0),
                   child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.end,
                     children: <Widget>[
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -60,8 +60,18 @@ class MyApp extends StatelessWidget {
                         ],
                       ),
                       Container(
-                        height: 180,
-                        width: 120,
+                        height: 150,
+                        width: 100,
+                        margin: EdgeInsets.symmetric(
+                            horizontal: 10.0, vertical: 4.0),
+                        child: Image.asset(
+                          'images/women.jpeg',
+                          fit: BoxFit.fitHeight,
+                        ),
+                      ),
+                      Container(
+                        height: 150,
+                        width: 100,
                         margin: EdgeInsets.symmetric(
                             horizontal: 10.0, vertical: 4.0),
                         child: Image.asset(
